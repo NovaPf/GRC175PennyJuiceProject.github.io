@@ -3,6 +3,7 @@
 body {
     background-image: url("../IMAGES/bgimage_Optimized.jpg");
     background-size: cover;
+    background-repeat: repeat-y;
     font-family: sans-serif;
     margin: 0;
 }
@@ -31,8 +32,8 @@ h3 {
     color: black;
     font-size: 20px;
     margin-top: 15px;
-    margin-left: 90px;
-    margin-right: 90px;
+    margin-left: 80px;
+    margin-right: 80px;
     text-align: center
 }
 
@@ -148,6 +149,7 @@ table {
     background-color: rgb(255, 152, 76);
     padding: 5px;
     border-radius: 0px 0px 4px 4px;
+    z-index: 1000;
 }
 
 .topnav ul li:hover ul {
@@ -184,18 +186,27 @@ table {
     background-color: rgba(255, 104, 8, 0.92);
     justify-content: center;
     clear: both; 
+    width: 80%;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .flex-conatiner > div {
     background-color: aqua;
     color: white;
-    width: 100%;
+    width: 80%;
     margin: 10px;
     text-align: center;
     line-height: 75px;
     font-size: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
 } 
 
+.flex-container > div > li {
+    padding-left: 150px;
+    padding-right: 150px;
+}
 .flex-container1 {
     display: flex;
     justify-content:center;
@@ -270,3 +281,87 @@ table {
     padding-bottom: 30px;
     padding-top: 20px;
 }
+
+.carousel-wrapper{ 
+    padding: 50px;
+    height;400px;
+    position: relative;
+    width:800px;
+    margin:0 auto;
+}
+
+.carousel-item{ 
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:-30px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next{
+  right:-30px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.light{
+    color:white;
+}
+
+@media (max-width:480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }                                                         
+}
+
+[id^="item"] {
+    display:none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');
+    background-size: cover;
+}
+.item-2{
+    background: url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
+    background-size: cover;
+}
+.item-3{
+    background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+    background-size: cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
