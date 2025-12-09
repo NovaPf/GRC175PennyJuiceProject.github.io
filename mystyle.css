@@ -1,0 +1,367 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    background-image: url("../IMAGES/bgimage_Optimized.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1, h2, h3, h4 {
+    margin: 0px;  
+    padding: 10px;
+}
+
+h1 {
+    text-align: left;
+}
+
+h2 {
+   text-align: center;
+    color: black;
+    font-size: 25px;
+}
+
+h3 {
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: center
+}
+
+h4 {
+    text-align: center;
+    font-size: 40px;
+    color: black
+}
+
+blog {
+    float: left;
+    background-color:rgb(255, 237, 206);
+    padding: 30px;
+    text-align:center;
+    font-size: 30px;
+    color: white;
+    width: 92.5%;
+}
+
+h5 {
+    float: left;
+    margin-left: 630px;
+    margin-top: 5px;
+}
+
+article {
+    background: rgb(255, 237, 206)
+}
+
+article h2 {
+    float: left;
+    width: 95%;
+    height: 200px;
+    background: rgb(255, 237, 206);
+    padding: 20px;
+    margin: auto;
+    margin-top: -20px;
+    font-size: 25px;
+}
+
+article h3 {
+    float: left;
+    width: 80%;
+    height: 10px;
+    background: rgb(255, 237, 206);
+    padding: 20px;
+    margin-top: 0px;
+    font-size: 10px;
+}
+
+table {
+    background: rgb(255, 237, 206);
+    width: 100%;
+    float: right;
+}
+
+#container {
+   /* background-color: rgba(255, 255, 255, 0.19);*/
+    width: 1000px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    color:#f40031;
+    text-align: left;
+    width: 100%
+}
+
+.content{
+   padding: 0px;
+}
+
+.topnav {
+    width: 100%;
+    /*overflow-x: hidden;*/
+    line-height: 35px;
+    background-color: rgb(224, 97, 17);
+    float: left;
+}
+
+.topnav a {
+   /* float: left;*/
+    display: block;
+    color: rgb(255, 231, 197);
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 20px
+}
+
+.topnav ul {
+    float: left;
+}
+
+.topnav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+#nav ul li a {
+    display:block;
+    font-size: 14px;
+    padding 24px 14px;
+    text-decoration: none;
+}
+
+.topnav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 152, 76);
+    padding: 5px;
+    border-radius: 0px 0px 4px 4px;
+    z-index: 1000;
+}
+
+.topnav ul li:hover ul {
+    display: block;
+    position: absolute;
+    background-color: rgb(224, 97, 17);
+    padding: 5px;
+    padding-right: 5px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.topnav ul li ul li {
+    padding: 8px 14px;
+}
+
+.topnav ul li ul li a {
+    border-radius: 4px;
+}
+
+.topnav ul li ul li a:hover {
+    background-color: rgb(255, 152, 76)
+}
+
+.slider_image {
+    flex: 70%;
+    flex-wrap: wrap;
+    display: ;
+    background-color: rgb(255, 252, 247);
+    padding: 20px;
+}
+
+.flex-container {
+    display:flex;
+    background-color: rgba(255, 104, 8, 0.92);
+    justify-content: center;
+    clear: both; 
+    width: 80%;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.flex-conatiner > div {
+    background-color: aqua;
+    color: white;
+    width: 80%;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+} 
+
+.flex-container > div > li {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.flex-container1 {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    clear: both;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+} 
+/*
+.flex-container1 > div {
+    display: flex;
+    justify-content: space-evenly;
+    color:black;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px; 
+}
+*/
+
+.flex-container2 {
+    display: flex;
+    /*background-color:rgba(255, 255, 255, 0.56);
+    background-image: url("../IMAGES/Untitled_Artwork%20(5).png");*/
+    justify-content: center;
+    align-content: center;
+    clear: both;
+    padding: inherit;
+    border-radius: 10px 10px 10px 10px;
+    border-spacing: inherit
+}
+
+.flex-container2 > div {
+    padding-bottom: 15px;
+    padding-top: 30px;
+}
+
+.footer {
+    text-align: center;
+    padding: 100px
+}
+
+.flex-container3 {
+    display: flex;
+    background-color:rgb(255, 237, 206);
+    justify-content: space-evenly;
+    clear: both;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.flext-container3 > div {
+    background-color: antiquewhite;
+    color: blue;
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 30px; 
+    unicode-bidi: inherit
+}
+.flext-container3 > div > h1 {
+    background-color:rgba(255, 166, 90, 0.9);
+    color: aqua;
+    width: 85%;
+    margin: 0pc;
+    text-align: center;
+    line-height: 35px;
+    font-size: 30px;
+    padding-left: 0px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+.carousel-wrapper{ 
+    padding: 50px;
+    height;400px;
+    position: relative;
+    width:800px;
+    margin:0 auto;
+}
+
+.carousel-item{ 
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    padding:25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:-30px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next{
+  right:-30px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.light{
+    color:white;
+}
+
+@media (max-width:480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }                                                         
+}
+
+[id^="item"] {
+    display:none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');
+    background-size: cover;
+}
+.item-2{
+    background: url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
+    background-size: cover;
+}
+.item-3{
+    background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+    background-size: cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
