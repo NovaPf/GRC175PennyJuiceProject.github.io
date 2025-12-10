@@ -7,6 +7,9 @@ body {
     font-family: sans-serif;
     margin: 0;
     background-color: rgb(255, 237, 206);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 a {
@@ -365,6 +368,7 @@ table {
     z-index: 3;
     opacity: 1;
 }
+
 
 
 
