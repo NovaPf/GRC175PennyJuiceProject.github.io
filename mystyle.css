@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-    background-image: url("../IMAGES/bgimage_Optimized.jpg");
+    background-image: url("bgimage_Optimized.jpg");
     background-size: cover;
     background-repeat: repeat-y;
     font-family: sans-serif;
@@ -364,4 +364,5 @@ table {
     z-index: 3;
     opacity: 1;
 }
+
 
