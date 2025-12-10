@@ -6,6 +6,7 @@ body {
     background-repeat: repeat-y;
     font-family: sans-serif;
     margin: 0;
+    background-color: rgb(255, 237, 206);
 }
 
 a {
@@ -364,6 +365,7 @@ table {
     z-index: 3;
     opacity: 1;
 }
+
 
 
 
